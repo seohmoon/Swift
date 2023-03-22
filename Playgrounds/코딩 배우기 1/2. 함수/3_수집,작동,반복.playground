@@ -1,0 +1,19 @@
+func get() {
+    moveForward()
+    collectGem()
+    moveForward()
+}
+
+get()
+moveForward()
+
+turnLeft()
+
+get()
+moveForward()
+moveForward()
+turnLeft()
+get()
+moveForward()
+turnLeft()
+get()
