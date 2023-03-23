@@ -1,0 +1,24 @@
+func moveSeven() {
+    for i in 1 ... 7 {
+        moveForward()
+        
+    }
+    
+}
+func ans() {
+    
+    for i in 1 ... 3 {
+        moveForward()
+        moveForward()
+        turnRight()
+        moveSeven()
+        toggleSwitch()
+        turnLeft()
+        turnLeft()
+        moveSeven()    
+        turnRight()
+        
+    }
+    
+}
+ans()

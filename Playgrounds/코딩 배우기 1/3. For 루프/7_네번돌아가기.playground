@@ -1,0 +1,27 @@
+func get() {
+    moveForward()
+    collectGem()
+    }
+
+func turnAround() {
+    turnLeft()
+    turnLeft()    
+}
+
+
+func fourJem() {
+    get()
+    get()
+    turnAround()
+    moveForward()
+    turnRight()
+    get()
+    turnAround()
+    moveForward()
+    get()
+    moveForward()    
+}
+
+for i in 1 ... 4 {
+    fourJem()    
+}
