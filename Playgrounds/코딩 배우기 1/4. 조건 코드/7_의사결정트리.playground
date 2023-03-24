@@ -1,0 +1,39 @@
+func check() {
+    moveForward()
+    
+    if isOnGem {
+        collectGem()        
+    } else if isOnClosedSwitch {
+        toggleSwitch()        
+    }
+    
+}
+
+func turnAround() {
+    turnLeft()
+    turnLeft()    
+}
+
+for i in 1 ... 2 {
+    check()
+    turnRight()
+    check()
+    check()
+    check()
+    turnLeft()
+    check()
+    turnAround()
+    moveForward()
+    turnRight()
+    moveForward()
+    moveForward()
+    moveForward()
+    turnRight()
+    check()
+    turnLeft()
+    check()
+    turnAround()
+    moveForward()
+    turnLeft()
+    check()
+}
