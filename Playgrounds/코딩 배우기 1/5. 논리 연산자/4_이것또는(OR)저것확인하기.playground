@@ -1,0 +1,11 @@
+for i in 1 ... 12 {
+    if isOnGem || isBlocked {
+        collectGem()        
+        turnRight()
+    }
+    else if isBlockedLeft {
+        turnRight()
+    }
+    moveForward()
+    collectGem() 
+}

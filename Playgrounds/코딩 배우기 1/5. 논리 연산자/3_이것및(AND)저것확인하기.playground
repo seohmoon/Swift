@@ -1,0 +1,36 @@
+func check() {
+    if isOnGem {
+        collectGem()
+    }else if isOnClosedSwitch {
+        toggleSwitch()        
+    }
+}
+
+for i in 1 ... 7 {
+    moveForward()
+    
+    if isOnGem && isBlockedLeft {
+        collectGem()
+        turnRight()
+        moveForward()
+        check()
+        if !isBlocked {
+            moveForward()
+            check()
+            turnLeft()
+            turnLeft()
+            moveForward()
+            moveForward()
+            turnRight()
+        }
+        else {
+            turnLeft()
+            turnLeft()
+            moveForward()
+            turnRight()
+        }
+    } 
+    else {
+        check()
+    }
+}
